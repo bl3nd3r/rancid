@@ -1,4 +1,8 @@
 3.14.99
+	jlogin: extend the initial prompt regex to not match whitespace before
+	the '>'.  This automatic banner caused issues on a newer switch:
+	"WARNING: loader version: 1.2 should be >= 2.0"
+
 	plogin: command-line option t is not expanded correctly - Emmanuel
 	Halbwachs
 

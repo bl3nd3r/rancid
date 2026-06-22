@@ -263,7 +263,7 @@ foreach router [lrange $argv $i end] {
 	set timeout $timeoutdflt
     }
 
-    set prompt ">"
+    set prompt "\[^ ]>"
 
     # Figure out username
     if {[info exists username]} {
