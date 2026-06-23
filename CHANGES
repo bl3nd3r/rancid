@@ -1,4 +1,7 @@
 3.14.99
+	iosxr.pm: filter oscillating license timestamps - thezoggy@github with
+	minor syntax adjustment
+
 	jlogin: extend the initial prompt regex to not match whitespace before
 	the '>'.  This automatic banner caused issues on a newer switch:
 	"WARNING: loader version: 1.2 should be >= 2.0"

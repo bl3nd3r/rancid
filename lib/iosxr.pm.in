@@ -984,8 +984,10 @@ sub ShowLicense {
 	next if (/# terminal length 0$/);
 
 	# filter the BS from license broker
-	next if (/(renewal attempt|communication attempt):/i);
+	next if (/communication deadline:/i);			# timestamp
 	next if (/next registration attempt:/i);		# timestamp
+	next if (/registration expires:/i);			# timestamp
+	next if (/(renewal attempt|communication attempt):/i);
 	next if (/(period used:|requested time:)/i);		# show lic feature
 	if (/(^\s*(evaluation )?period (left|remaining):\s*)\d+/i) {
 	    ProcessHistory("COMMENTS","keysort","LICENSE","! $1<limited>\n");
